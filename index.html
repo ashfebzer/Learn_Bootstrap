@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+
+    <!-- CDN links to Bootstrap and jQuery files -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+  </head>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-brand-bg navbar-light navbar-toggleable-md">
+      <button 
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-brand">&nbsp;</div>
+
+        <div id="navbarNavDropdown" class="collapse navbar-collapse">
+          <ul class="navbar-nav offset-md-4">
+            <li class="nav-items">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-items">
+              <a class="nav-link" href="#">Upgrade</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">
+              <i class="material-icons">notifications</i>
+              </a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">
+                <i class="material-icons">help</i>
+              </a>
+            </li>
+            <li class="nav-items dropdown">
+              <a class="nav-link user-icon" href="#" data-toggle="dropdown">
+                <i class="material-icons">person</i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item"><strong>Username</strong></a>
+                <a class="dropdown-item"><em>Plan name</em></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Update profile</a>
+                <a class="dropdown-item">Preferences</a>
+                <a class="dropdown-item">Billing</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+      <div class="container">
+        <div class="row">
+
+          <!-- LEFT COLUMN -->
+          <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-10">
+                  <img id="id-img" src="img/identity.png" alt="">  
+                </div>
+            <div class="row">
+                <div class="col-md-10">
+                  <h1>Eu fugiat est exercitation dolore nulla.</h1>
+                  <p>Ullamco nostrud consectetur elit dolore enim irure deserunt voluptate velit cillum ad nulla et.</p>
+                  <p>Labore et tempor cillum tempor duis ad pariatur.</p>    
+                </div>  
+            </div>
+            </div>
+          </div>
+          <!-- END LEFT COLUMN -->
+
+          <!-- Right column -->
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-4">
+              <h1>Forms</h1>
+            </div>
+
+            <form class="form-inline">
+              <div class="col-sm-6">
+                <input>
+                <i class="material-icons search-control tool-hint">search</i>
+              </div>
+              <div class="col-sm-6">
+                <button id="add-form-btn">Add New Form</button>
+              </div>
+            </form>
+
+          </div> 
+         <!-- row -->
+
+            <!-- ROW HEADING -->
+
+            <div class="row">
+              <div class="col-2 col-md-3">Name</div>
+              <div class="col-2 text-right">Impressions</div>
+              <div class="col-2 text-right">Responses</div>
+              <div class="col-2 text-right">Conversion</div>
+            </div>
+
+            <!-- DATA row 1-->
+
+            <div class="col-md-11 lo-border"></div>
+
+            <div class="row data-row">
+                <div class="col-2 col-md-3">LP Form 1</div>
+                <div class="col-2 text-right">2034</div>
+                <div class="col-2 text-right">1017</div>
+                <div class="col-2 text-right">50%</div>
+                <div class="col-3">
+                <a href="/"><i class="material-icons admin-tool">trending_up</i></a>
+                <a href="/"><i class="material-icons admin-tool">edit</i></a>
+                <a href="/"><i class="material-icons admin-tool">delete</i></a>
+                <a href="/"><i class="material-icons tool-hint">more_horiz</i></a>
+              </div>
+            </div>
+
+            <!-- DATA row 2-->
+
+            <div class="row data-row">
+              <div class="col-2 col-md-3">FAQ Feedback</div>
+              <div class="col-2 text-right">1028</div>
+              <div class="col-2 text-right">1123</div>
+              <div class="col-2 text-right">11%</div>
+              <div class="col-3">
+                <a href="/"><i class="material-icons admin-tool">trending_up</i></a>
+                <a href="/"><i class="material-icons admin-tool">edit</i></a>
+                <a href="/"><i class="material-icons admin-tool">delete</i></a>
+                <a href="/"><i class="material-icons tool-hint">more_horiz</i></a>
+            </div>
+          </div>
+
+          <!-- DATA row 3-->
+
+            <div class="row data-row">
+                <div class="col-2 col-md-3">Satisfied YN</div>
+                <div class="col-2 text-right">1231</div>
+                <div class="col-2 text-right">1324</div>
+                <div class="col-2 text-right">70%</div>
+                <div class="col-3">
+                  <a href="/"><i class="material-icons admin-tool">trending_up</i></a>
+                  <a href="/"><i class="material-icons admin-tool">edit</i></a>
+                  <a href="/"><i class="material-icons admin-tool">delete</i></a>
+                  <a href="/"><i class="material-icons tool-hint">more_horiz</i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    </main>
+    <!-- END MAIN CONTENT -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      
+      <div class="container-fluid">
+          <!-- Row-1 -->
+          <div class="row">
+            <div class="mx-auto">
+              <a  href="#">Pricing</a>
+              <a  href="#">About</a>
+              <a  href="#">FAQ</a>
+              <a  href="#">Blog</a>
+              <a  href="#">Contact</a>
+            </div>
+          </div>
+          <!-- Row-2 -->
+          <div class="row">
+            <div class="mx-auto">
+              <span>&copy;<span>The Brand</span>&nbsp;2020</span>
+            </div>
+          </div>
+      </div>
+
+    </footer>
+
+    
+    
+  </body>
+</html>
